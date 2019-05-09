@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="myStyle.css">
+    <title>calender</title>
+  </head>
+  <body>
+    <table id="Table">
+      <thead>
+        <tr>
+          <th colspan="7" id="TableHead"></th>
+        </tr>
+        <tr>
+          <th id="SundayHead">日</th>
+          <th><strong>月</strong></th>
+          <th><strong>火</strong></th>
+          <th><strong>水</strong></th>
+          <th><strong>木</strong></th>
+          <th>&#x91D1;</th>
+          <th id="SturdayHead"><strong>土</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+      </tbody>
+    </table>
+    <div id="myModal" class="modal">
+      <div class="modal-contents">
+        <p id="modal-head"></p>
+        <input type="text" id="modal-input">
+        <button id="modal-add">Add</button>
+        <button id="modal-cancel">Cancel</button>
+      </div>
+    </div>
+
+    <div id="change-modal" class="modal">
+      <div id="change-contents">
+        <p>일정 변경 <br></p>
+        <table id="input-table">
+          <tr>
+            <td class="input-td"><strong>일정 날짜 변경:</strong></td> <td class="input-td"><input type="date" id="change-date"></td>
+          </tr>
+          <tr>
+            <td class="input-td"><strong>일정 순서 변경:</strong></td><td class="input-td"> <input type="number" id="change-number" min="1" max="4"></td>
+          </tr>
+        </table>
+        <div id="change-button">
+          <button id="change-add">Save</button>
+          <button id="change-delete">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="myScript.js"></script>
+  </body>
+</html>
